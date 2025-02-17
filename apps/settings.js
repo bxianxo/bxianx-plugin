@@ -16,7 +16,7 @@ export class setting extends plugin {
       priority: 1000,
       rule: [
         {
-          reg: /^#?(bxx|不羡仙|Bxianx)(插件)?(设置|修改)(疯狂星期四|随机表情包|谁艾特我|头像|群头像|网页截图|更新推送)(开启|关闭)$/i,
+          reg: /^#?(bxx|不羡仙|Bxianx)(插件)?(设置|修改)(疯狂星期四|随机表情包|广播通知|谁艾特我|头像|群头像|网页截图|更新推送)(开启|关闭)$/i,
           fnc: 'setting'
           // permission: "master",  //设置执行权限
         }
@@ -29,7 +29,7 @@ export class setting extends plugin {
       return e.reply('仅主人可用！')
     }
 
-    let reg = /(?:疯狂星期四|随机表情包|谁艾特我|头像|群头像|网页截图|更新推送)(开启|关闭)/i.exec(e.msg)
+    let reg = /(?:疯狂星期四|随机表情包|广播通知|谁艾特我|头像|群头像|网页截图|更新推送)(开启|关闭)/i.exec(e.msg)
     if (!reg) {
       e.reply('命令格式错误或未匹配')
       return false
@@ -74,6 +74,7 @@ export class setting extends plugin {
     const mapping = {
       疯狂星期四: 'KFC',
       随机表情包: 'sjbqb',
+      广播通知: 'gbtz',
       谁艾特我: 'shuianwo',
       头像: 'qqtx',
       群头像: 'qqqtx',
