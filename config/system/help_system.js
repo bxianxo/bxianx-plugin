@@ -60,15 +60,7 @@ export const helpList = [
       },
     ],
   },
-  {
-    group: "不羡仙实用功能【开发中】",
-    list: [
-      {
-        icon: 25,
-        title: "#举牌",
-        desc: "生成一张小人举牌图片",
-      },
-      {
+    {
         icon: 25,
         title: "#网页截图",
         desc: "网页截图 在命令后加网址",
