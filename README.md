@@ -30,7 +30,7 @@ git clone --depth=1 https://github.com/bxianxo/bxianx-plugin.git ./plugins/Bxian
 使用[ghfast](https://ghfast.top)提供的代理服务下载不羡仙插件
 
 ```bash
-git clone --depth=1 https://ghfast.top/https://gitee.com/bxianxo/bxianx-plugin.git ./plugins/Bxianx-plugin/
+git clone --depth=1 https://ghfast.top/https://github.com/bxianxo/bxianx-plugin.git ./plugins/Bxianx-plugin/
 ```
 
 使用[Gitee仓库]((https://gitee.com/bxianx/bxianx-plugin))【更新可能会延迟】
