@@ -1,0 +1,25 @@
+{
+  "name": "Bxianx-plugin",
+  "version": "1.0.1",
+  "description": "不羡仙？",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "fix": "npx prettier --write **/*.js && npx prettier --write *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/bxianx/bxianx-plugin"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.0",
+    "iconv-lite": "^0.6.3"
+  },
+  "keywords": [
+    "Yunzai",
+    "Miao-Yunzai",
+    "plugin"
+  ],
+  "author": "不羡仙",
+  "license": "MIT"
+}

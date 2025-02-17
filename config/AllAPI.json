@@ -1,0 +1,28 @@
+{
+    "api5": {
+        "name": "表情包API",
+        "url": "https://yugan.love"
+    },
+    "api10": {
+        "name": "QQ头像API",
+        "url": "https://q.qlogo.cn/headimg_dl"
+    },
+    "api11": {
+        "name": "QQ群头像API",
+        "url": "https://p.qlogo.cn/gh"
+    },
+    "api19": {
+        "name": "小人举牌API",
+        "url": "http://shanhe.kim/api/qq/ju2.php"
+    },
+    "api21": {
+        "name": "疯狂星期四API",
+        "url": "http://shanhe.kim/api/za/kfc.php"
+    },
+    "api22": {
+        "name": "随机表情包君昭API",
+        "url": "https://api.junzhao.icu/aili"
+    },
+ 
+   
+}
