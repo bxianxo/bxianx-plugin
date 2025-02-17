@@ -21,14 +21,19 @@
 
 ### 安装
 
-打开[Miao-Yunzai](https://github.com/yoimiya-kokomi/Miao-Yunzai)或[TRSS-Yunzai](https://github.com/TimeRainStarSky/Yunzai)文件夹根目录执行命令
+打开Miao-Yunzai或TRSS-Yunzai文件夹根目录执行命令
 
-使用[Github仓库](https://github.com/Yummy-cookie/biscuit-plugin)
+使用[Github仓库](https://github.com/bxianxo/bxianx-plugin)
 ```bash
-暂无仓库
+git clone --depth=1 https://gitee.com/bxianxo/bxianx-plugin.git ./plugins/Bxianx-plugin/
+```
+使用[ghfast](https://ghfast.top)提供的代理下载服务下载不羡仙插件
+
+```bash
+git clone --depth=1 https://gitee.com/bxianx/bxianx-plugin.git ./plugins/Bxianx-plugin/
 ```
 
-使用[Gitee仓库](https://gitee.com/Yummy-cookie/biscuit-plugin)
+使用[Gitee仓库]((https://gitee.com/bxianx/bxianx-plugin))
 ```bash
 git clone --depth=1 https://gitee.com/bxianx/bxianx-plugin.git ./plugins/Bxianx-plugin/
 ```
@@ -37,11 +42,14 @@ git clone --depth=1 https://gitee.com/bxianx/bxianx-plugin.git ./plugins/Bxianx-
 
 ```bash
 pnpm i
+或
+pnpm install --filter=Bxianx-plugin
 ```
 
 ### 帮助
 
 插件加载完成后发送`#不羡仙帮助`可以帮助图片
+
 ### 更新
 
 发送#不羡仙更新
