@@ -27,7 +27,7 @@ export class jupai extends plugin {
     const msg = e.msg.match(/^[#/]?举牌(.*)$/)[1]
     let data = await fs.readFileSync(`${PluginPath}/config/AllAPI.json`)
     const API = JSON.parse(data)
-    let api = API.api4.url + `?msg=${msg}`
+    let api = API.api19.url + `?msg=${msg}`
     e.reply([segment.image(`${api}`)])
     return true
   }
