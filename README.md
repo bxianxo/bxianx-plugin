@@ -1,6 +1,6 @@
-[![Star History Chart](https://api.star-history.com/svg?repos=bxianx/bxianx-plugin&type=Date)](https://star-history.com/#bxianx/bxianx-plugin&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=bxianxo/bxianx-plugin&type=Date)](https://star-history.com/#bxianxo/bxianx-plugin&Date)
 
-- ![动态访问量](https://count.kjchmc.cn/get/@Bxianx-plugin?)<br>
+- ![动态访问量](https://count.kjchmc.cn/get/@bxianx-plugin?)<br>
 
 [![Group](https://img.shields.io/badge/QQ%E7%BE%A4%E5%8F%B7-456419844-red?style=flat-square&logo=GroupMe&logoColor=white)](https://qm.qq.com/q/Z3CFyDXtKi)
 <a href='https://gitee.com/bxianx/bxianx-plugin/stargazers'><img src='https://gitee.com/bxianx/bxianx-plugin/badge/star.svg?theme=dark' alt='star'></img></a>
@@ -25,15 +25,15 @@
 
 使用[Github仓库](https://github.com/bxianxo/bxianx-plugin)
 ```bash
-git clone --depth=1 https://gitee.com/bxianxo/bxianx-plugin.git ./plugins/Bxianx-plugin/
+git clone --depth=1 https://github.com/bxianxo/bxianx-plugin.git ./plugins/Bxianx-plugin/
 ```
 使用[ghfast](https://ghfast.top)提供的代理下载服务下载不羡仙插件
 
 ```bash
-git clone --depth=1 https://gitee.com/bxianx/bxianx-plugin.git ./plugins/Bxianx-plugin/
+git clone --depth=1 https://ghfast.top/https://gitee.com/bxianxo/bxianx-plugin.git ./plugins/Bxianx-plugin/
 ```
 
-使用[Gitee仓库]((https://gitee.com/bxianx/bxianx-plugin))
+使用[Gitee仓库]((https://gitee.com/bxianx/bxianx-plugin))【更新可能会延迟】
 ```bash
 git clone --depth=1 https://gitee.com/bxianx/bxianx-plugin.git ./plugins/Bxianx-plugin/
 ```
@@ -42,20 +42,17 @@ git clone --depth=1 https://gitee.com/bxianx/bxianx-plugin.git ./plugins/Bxianx-
 
 ```bash
 pnpm i
-或
+  或
 pnpm install --filter=Bxianx-plugin
 ```
 
 ### 帮助
 
-插件加载完成后发送`#不羡仙帮助`可以帮助图片
+插件加载完成后发送【 #不羡仙帮助 】获取功能菜单
 
 ### 更新
 
-发送#不羡仙更新
-
-或者在Bxianx-plugin目录打开
-手动`git pull`
+发送 #不羡仙更新 或 者在 Bxianx-plugin 目录打开手动`git pull`
 
 ### 链接
 
