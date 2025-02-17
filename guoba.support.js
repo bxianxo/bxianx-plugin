@@ -86,14 +86,6 @@ export function supportGuoba () {
           componentProps: {}
         },
         {
-          field: 'jupai',
-          label: '举牌',
-          helpMessage: '',
-          bottomHelpMessage: '',
-          component: 'Switch',
-          componentProps: {}
-        },
-        {
           field: 'wyjt',
           label: '网页截图',
           helpMessage: '',
