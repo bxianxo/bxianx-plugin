@@ -27,7 +27,7 @@ export class KFC extends plugin {
     }
     let data = await fs.readFileSync(`${PluginPath}/config/AllAPI.json`)
     const API = JSON.parse(data)
-    let api = API.api5.url
+    let api = API.api21.url
     const response = await fetch(api)
     let text = await response.text()
     e.reply(text)
