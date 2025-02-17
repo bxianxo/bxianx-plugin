@@ -58,16 +58,13 @@ export const helpList = [
         title: "#群头像",
         desc: "获取QQ群头像",
       },
-    ],
-  },
-    {
+      {
         icon: 25,
         title: "#网页截图",
         desc: "网页截图 在命令后加网址",
       },
     ],
   },
- 
   {
     group: "不羡仙工具帮助【开发中】",
     list: [
@@ -98,7 +95,6 @@ export const helpList = [
       },
     ],
   },
-
 ];
 
 export const bqbhelpCfg = {
