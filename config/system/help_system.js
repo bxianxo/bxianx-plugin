@@ -59,6 +59,11 @@ export const helpList = [
         desc: "获取QQ群头像",
       },
       {
+        icon: 3,
+        title: "#广播通知",
+        desc: "发送所有群聊，可加黑白名单",
+      },
+      {
         icon: 25,
         title: "#网页截图",
         desc: "网页截图 在命令后加网址",
