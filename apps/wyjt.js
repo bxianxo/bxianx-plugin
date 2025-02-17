@@ -10,7 +10,7 @@ let CONFIG_YAML = YAML.parse(
 export class Example extends plugin {
   constructor () {
     super({
-      name: '[ll]网页截图预览',
+      name: '[bxx]网页截图预览',
       priority: 5000,
       rule: [
         {
