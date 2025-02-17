@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/bxianx/bxianx-plugin"
+    "url": "https://github.com/bxianxo/Bxianx-plugin"
   },
   "dependencies": {
     "qrcode": "^1.5.0",
