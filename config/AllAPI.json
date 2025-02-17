@@ -1,28 +1,78 @@
 {
     "api1": {
+        "name": "待定1",
+        "url": "https://api"
+    },
+    "api2": {
+        "name": "待定2",
+        "url": "https://api"
+    },
+    "api3": {
+        "name": "待定3",
+        "url": "https://api"
+    },
+    "api4": {
+        "name": "待定4",
+        "url": "https://api"
+    },
+    "api5": {
         "name": "表情包API",
         "url": "https://yugan.love"
     },
-    "api2": {
+    "api6": {
+        "name": "待定6",
+        "url": "https://api"
+    },
+    "api8": {
+        "name": "待定8",
+        "url": "https://api"
+    },
+    "api10": {
         "name": "QQ头像API",
         "url": "https://q.qlogo.cn/headimg_dl"
     },
-    "api3": {
+    "api11": {
         "name": "QQ群头像API",
         "url": "https://p.qlogo.cn/gh"
     },
-    "api4": {
+    "api12": {
+        "name": "随机动漫图API",
+        "url": "https://tenapi.cn/v2/acg"
+    },
+    "api14": {
+        "name": "待定14",
+        "url": "https://api"
+    },
+    "api15": {
+        "name": "待定15",
+        "url": "https://api"
+    },
+    "api16": {
+        "name": "待定16",
+        "url": "https://api"
+    },
+    "api17": {
+        "name": "待定17",
+        "url": "https://api"
+    },
+    "api18": {
+        "name": "待定18",
+        "url": "https://api"
+    },
+    "api19": {
         "name": "小人举牌API",
         "url": "http://shanhe.kim/api/qq/ju2.php"
     },
-    "api5": {
+    "api21": {
         "name": "疯狂星期四API",
         "url": "http://shanhe.kim/api/za/kfc.php"
     },
-    "api6": {
+    "api22": {
         "name": "随机表情包君昭API",
         "url": "https://api.junzhao.icu/aili"
     },
- 
-   
+    "api23": {
+        "name": "待定23",
+        "url": "https://api"
+    }
 }
