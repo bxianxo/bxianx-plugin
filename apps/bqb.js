@@ -52,20 +52,20 @@ export class bqb extends plugin {
     if (type === '甘城' || type === '猫羽雫' || type === '甘城猫猫') {
       let data = await fs.readFileSync(`${PluginPath}/config/AllAPI.json`)
       const API = JSON.parse(data)
-      let api = API.api5.url + '?name=甘城猫猫'
+      let api = API.api1.url + '?name=甘城猫猫'
       await e.reply(segment.image(api))
       return true
     }
     if (!type) {
       let data = await fs.readFileSync(`${PluginPath}/config/AllAPI.json`)
       const API = JSON.parse(data)
-      let api = API.api22.url
+      let api = API.api1.url
       await e.reply(segment.image(api))
       return true
     }
     let data = await fs.readFileSync(`${PluginPath}/config/AllAPI.json`)
     const API = JSON.parse(data)
-    let api = API.api5.url + `?name=${type}`
+    let api = API.api1.url + `?name=${type}`
     await e.reply(segment.image(api))
     return true
   }
