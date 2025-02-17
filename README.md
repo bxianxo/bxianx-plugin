@@ -27,7 +27,7 @@
 ```bash
 git clone --depth=1 https://github.com/bxianxo/bxianx-plugin.git ./plugins/Bxianx-plugin/
 ```
-使用[ghfast](https://ghfast.top)提供的代理下载服务下载不羡仙插件
+使用[ghfast](https://ghfast.top)提供的代理服务下载不羡仙插件
 
 ```bash
 git clone --depth=1 https://ghfast.top/https://gitee.com/bxianxo/bxianx-plugin.git ./plugins/Bxianx-plugin/
