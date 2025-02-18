@@ -211,7 +211,7 @@ export const bqbhelpList = [
 
 export const settinghelpCfg = {
   title: "不羡仙设置帮助",
-  subTitle: "Yunzai-Bot & Bxianx-Plugin",
+  subTitle: "不羡仙 & Bxianx-Plugin",
   columnCount: 3,
   colWidth: 265,
   theme: "all",
@@ -269,16 +269,9 @@ export const settinghelpList = [
       },
     ],
   },
-  {
-    group: "可不加#前缀 - 图片功能设置",
-    list: [
-      {
-        icon: 178,
-        title: "#不羡仙设置举牌开启/关闭",
-        desc: "开启/关闭举牌 默认开启",
-      },
-    ],
-  },
+
+  ],
+ },
 ];
 
 export const isSys = true;
