@@ -274,4 +274,104 @@ export const settinghelpList = [
  },
 ];
 
+
+export const helpCfg = {
+  title: "不羡仙隐藏菜单",
+  subTitle: "不羡仙 & Bxianx-Plugin",
+  columnCount: 3,
+  colWidth: 265,
+  theme: "all",
+  themeExclude: ["default"],
+  style: {
+    fontColor: "#ceb78b",
+    descColor: "#eee",
+    contBgColor: "rgba(6, 21, 31, .5)",
+    contBgBlur: 3,
+    headerBgColor: "rgba(6, 21, 31, .4)",
+    rowBgColor1: "rgba(6, 21, 31, .2)",
+    rowBgColor2: "rgba(6, 21, 31, .35)",
+  },
+  bgBlur: false,
+};
+
+export const helpList = [
+  {
+    group: "不羡仙菜单A",
+    list: [
+      {
+        icon: 32,
+        title: "#疯狂星期四",
+        desc: "输出一句疯狂星期四",
+      },
+      {
+        icon: 39,
+        title: "#随机表情包",
+        desc: "获取表情包 详情请查看不羡仙表情包帮助",
+      },
+    ],
+  },
+  {
+    group: "不羡仙菜单B",
+    list: [
+      {
+        icon: 132,
+        title: "#谁艾特我",
+        desc: "查看4天内的艾特你的人及其内容,不支持face表情",
+      },
+      {
+        icon: 2,
+        title: "#头像",
+        desc: "获取群友的QQ头像 at就是拿群友的 不艾特就是自己的",
+      },
+      {
+        icon: 3,
+        title: "#群头像",
+        desc: "获取QQ群头像",
+      },
+      {
+        icon: 3,
+        title: "#广播通知",
+        desc: "发送所有群聊，可加黑白名单",
+      },
+      {
+        icon: 25,
+        title: "#网页截图",
+        desc: "网页截图 在命令后加网址",
+      },
+    ],
+  },
+  {
+    group: "不羡仙工具帮助【开发中】",
+    list: [
+      {
+        icon: 26,
+        title: "QQ群：456419844",
+        desc: "提交pr或进群反馈",
+      },
+    ],
+  },
+  {
+    group: "不羡仙菜单C",
+    list: [
+      {
+        icon: 211,
+        title: "#不羡仙表情包帮助",
+        desc: "表情包帮助",
+      },
+      {
+        icon: 66,
+        title: "#不羡仙设置帮助",
+        desc: "设置帮助",
+      },
+      {
+        icon: 67,
+        title: "#不羡仙插件更新",
+        desc: "更新插件",
+      },
+    ],
+  },
+];
+
+
+
 export const isSys = true;
