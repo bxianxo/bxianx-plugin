@@ -34,7 +34,7 @@ export class example2 extends plugin {
 
     async broadcast(e) {
         // 检查广播通知开关是否开启
-        if (!CONFIG_YAML.broadcastNotice) {
+        if (!CONFIG_YAML.gbtz) {
             return logger.info('[Bxianx插件]广播通知已关闭');
         }
         if (!e.isMaster) return true;
@@ -48,29 +48,42 @@ export class example2 extends plugin {
         console.log(e.msg);
         let otheryaml = await fs.readFile(`../../config/config/other.yaml`, `utf-8`);
         let other = YAML.parse(otheryaml);
+
         if (!msg[1]) {
+            // 检查普通广播开关
+            if (!CONFIG_YAML.gbtz) {
+                return e.reply('[Bxianx插件]普通广播已关闭');
+            }
             let all_group = Array.from(Bot[e.self_id].gl.values());
             let all_groupid = [];
             for (let item of all_group) {
                 all_groupid.push(item.group_id);
             }
-            await 发送消息(all_groupid, this.e.message, e);
+            await 发送消息(all_groupid, e.message, e);
             e.reply(`广播已完成`);
             return true;
         } else if (msg[1] === `白名单`) {
+            // 检查白名单广播开关
+            if (!CONFIG_YAML.gbtz) {
+                return e.reply('[Bxianx插件]白名单广播已关闭');
+            }
             if (other.whiteGroup.length === 0) {
                 e.reply(`白名单为空，广播失败`);
                 return true;
             }
-            await 发送消息(other.whiteGroup, this.e.message, e);
+            await 发送消息(other.whiteGroup, e.message, e);
             e.reply(`广播已完成`);
             return true;
         } else if (msg[1] === `黑名单`) {
+            // 检查黑名单广播开关
+            if (!CONFIG_YAML.gbtz) {
+                return e.reply('[Bxianx插件]黑名单广播已关闭');
+            }
             if (other.blackGroup.length === 0) {
                 e.reply(`黑名单为空，广播失败`);
                 return true;
             }
-            await 发送消息(other.blackGroup, this.e.message, e);
+            await 发送消息(other.blackGroup, e.message, e);
             e.reply(`广播已完成`);
             return true;
         }
