@@ -230,7 +230,7 @@ export const settinghelpCfg = {
 
 export const settinghelpList = [
   {
-    group: "不羡仙功能设置",
+    group: "不羡仙设置帮助",
     list: [
       {
         icon: 8,
