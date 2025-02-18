@@ -62,6 +62,14 @@ export function supportGuoba () {
           componentProps: {}
         },
         {
+          field: 'gbtz',
+          label: '广播通知',
+          helpMessage: '',
+          bottomHelpMessage: '',
+          component: 'Switch',
+          componentProps: {}
+        },
+        {
           field: 'shuianwo',
           label: '谁艾特我',
           helpMessage: '',
