@@ -8,9 +8,9 @@ import Bot from '../../../lib/bot.js';
 // 定义 logger 对象
 const logger = console;
 
-// 解析配置文件，调整路径
+// 解析配置文件
 let CONFIG_YAML = YAML.parse(
-    fs.readFileSync(`${PluginPath}/config.yaml`, 'utf8')
+    fs.readFileSync(`${PluginPath}/config/config.yaml`, 'utf8')
 );
 
 // 广播消息是否开启延迟 (默认为5秒)
