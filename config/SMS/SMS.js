@@ -1,0 +1,5 @@
+channel: "your_channel_id"
+username: "your_username"
+key: "your_api_key"
+sign: "公司名称"
+content: "这是要发送的短信内容"
