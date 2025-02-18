@@ -3,10 +3,14 @@ import { PluginPath } from '../components/index.js';
 import YAML from 'yaml';
 import plugin from '../../../lib/plugins/plugin.js';
 import common from '../../../lib/common/common.js';
+import Bot from '../../../lib/bot.js';
 
-// 解析配置文件
+// 定义 logger 对象
+const logger = console;
+
+// 解析配置文件，调整路径
 let CONFIG_YAML = YAML.parse(
-    fs.readFileSync(`${PluginPath}/config/config.yaml`, 'utf8')
+    fs.readFileSync(`${PluginPath}/config.yaml`, 'utf8')
 );
 
 // 广播消息是否开启延迟 (默认为5秒)
@@ -46,45 +50,40 @@ export class example2 extends plugin {
         this.finish('broadcast_');
         let msg = e.msg.match(/^#(白名单|黑名单)?广播通知$/);
         console.log(e.msg);
-        let otheryaml = await fs.readFile(`../../config/config/other.yaml`, `utf-8`);
-        let other = YAML.parse(otheryaml);
-
-        if (!msg[1]) {
-            // 检查普通广播开关
-            if (!CONFIG_YAML.gbtz) {
-                return e.reply('[Bxianx插件]普通广播已关闭');
-            }
-            let all_group = Array.from(Bot[e.self_id].gl.values());
-            let all_groupid = [];
-            for (let item of all_group) {
-                all_groupid.push(item.group_id);
-            }
-            await 发送消息(all_groupid, e.message, e);
-            e.reply(`广播已完成`);
-            return true;
-        } else if (msg[1] === `白名单`) {
-            // 检查白名单广播开关
-            if (!CONFIG_YAML.gbtz) {
-                return e.reply('[Bxianx插件]白名单广播已关闭');
-            }
-            if (other.whiteGroup.length === 0) {
-                e.reply(`白名单为空，广播失败`);
+        const filePath = '../../../config/config/other.yaml';
+        console.log('尝试读取的文件路径:', filePath);
+        try {
+            let otheryaml = await fs.promises.readFile(filePath, 'utf-8');
+            let other = YAML.parse(otheryaml);
+            if (!msg[1]) {
+                let all_group = Array.from(Bot[e.self_id].gl.values());
+                let all_groupid = [];
+                for (let item of all_group) {
+                    all_groupid.push(item.group_id);
+                }
+                await 发送消息(all_groupid, e.message, e);
+                e.reply(`广播已完成`);
+                return true;
+            } else if (msg[1] === `白名单`) {
+                if (other.whiteGroup.length === 0) {
+                    e.reply(`白名单为空，广播失败`);
+                    return true;
+                }
+                await 发送消息(other.whiteGroup, e.message, e);
+                e.reply(`广播已完成`);
+                return true;
+            } else if (msg[1] === `黑名单`) {
+                if (other.blackGroup.length === 0) {
+                    e.reply(`黑名单为空，广播失败`);
+                    return true;
+                }
+                await 发送消息(other.blackGroup, e.message, e);
+                e.reply(`广播已完成`);
                 return true;
             }
-            await 发送消息(other.whiteGroup, e.message, e);
-            e.reply(`广播已完成`);
-            return true;
-        } else if (msg[1] === `黑名单`) {
-            // 检查黑名单广播开关
-            if (!CONFIG_YAML.gbtz) {
-                return e.reply('[Bxianx插件]黑名单广播已关闭');
-            }
-            if (other.blackGroup.length === 0) {
-                e.reply(`黑名单为空，广播失败`);
-                return true;
-            }
-            await 发送消息(other.blackGroup, e.message, e);
-            e.reply(`广播已完成`);
+        } catch (error) {
+            console.error('读取文件时出错:', error);
+            e.reply('读取配置文件时出错，请检查配置文件路径。');
             return true;
         }
     }
