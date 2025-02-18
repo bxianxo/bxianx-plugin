@@ -15,9 +15,12 @@
 - 多功能生活插件
 - 主要网络信息方面
 - 正在新增功能ing
+- 如有问题请提交is或进入交流群
 
 
 ## 使用说明
+
+## 使用提示：本插件内较多功能正在优化和修复，例如106短信祝福功能正在优化就没写在帮助里，控制台可能会提示为填写API签名无须在意。如有问题可删除对应报错js或卸载插件
 
 ### 安装
 
@@ -60,6 +63,7 @@ pnpm install --filter=Bxianx-plugin
 - [喵崽](https://github.com/Le-niao/Yunzai-Bot)
 - [TRSS崽](https://gitee.com/TimeRainStarSky/Yunzai)
 - [插件库](https://github.com/yhArcadia/Yunzai-Bot-plugins-index)
+- [交流群：456419844](https://qm.qq.com/q/SFh5Wqu5y0))
 
 ### 其他
 
