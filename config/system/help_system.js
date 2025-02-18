@@ -123,7 +123,7 @@ export const bqbhelpCfg = {
 
 export const bqbhelpList = [
   {
-    group: "可不加#前缀 - 动漫角色表情包",
+    group: "不羡仙表情帮助",
     list: [
       {
         icon: 79,
@@ -163,7 +163,7 @@ export const bqbhelpList = [
     ],
   },
   {
-    group: "可不加#前缀 - 其他类型表情包",
+    group: "不羡仙随机图帮助",
     list: [
       {
         icon: 8,
@@ -210,7 +210,7 @@ export const bqbhelpList = [
 ];
 
 export const settinghelpCfg = {
-  title: "设置帮助-已适配锅巴",
+  title: "不羡仙设置帮助",
   subTitle: "Yunzai-Bot & Bxianx-Plugin",
   columnCount: 3,
   colWidth: 265,
@@ -230,7 +230,7 @@ export const settinghelpCfg = {
 
 export const settinghelpList = [
   {
-    group: "可不加#前缀 - 功能开关设置",
+    group: "不羡仙功能设置",
     list: [
       {
         icon: 8,
@@ -247,10 +247,15 @@ export const settinghelpList = [
         title: "#不羡仙设置随机表情包开启/关闭",
         desc: "开启/关闭随机表情包 默认开启",
       },
+      {
+        icon: 28,
+        title: "#不羡仙设置广播通知开启/关闭",
+        desc: "开启/关闭广播通知 默认开启",
+      },
     ],
   },
   {
-    group: "可不加#前缀 - 头像相关设置",
+    group: "不羡仙头像设置",
     list: [
       {
         icon: 158,
@@ -271,11 +276,6 @@ export const settinghelpList = [
         icon: 178,
         title: "#不羡仙设置举牌开启/关闭",
         desc: "开启/关闭举牌 默认开启",
-      },
-      {
-        icon: 185,
-        title: "#不羡仙设置网页截图开启/关闭",
-        desc: "开启/关闭网页截图 默认开启",
       },
     ],
   },
