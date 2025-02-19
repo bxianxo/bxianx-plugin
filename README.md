@@ -65,6 +65,13 @@ pnpm install --filter=Bxianx-plugin
 - [插件库](https://github.com/yhArcadia/Yunzai-Bot-plugins-index)
 - [交流群：456419844](https://qm.qq.com/q/SFh5Wqu5y0))
 
+
+##鸣谢提供者！
+
+感谢洛洛插件提供插件启动框架
+源地址：[洛洛插件](https://gitee.com/yll14/luoluo-plugin)
+
+
 ### 其他
 
 - 素材来源于网络，仅供交流学习使用，严禁用于商业和非法用途
