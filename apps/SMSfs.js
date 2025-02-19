@@ -26,6 +26,7 @@ async function readYamlFile(filePath) {
     }
 }
 
+
 // 读取 other.yaml 文件中的 masterQQ 值
 async function readMasterQQFromYaml() {
     const yamlData = await readYamlFile(OTHER_YAML_PATH);
