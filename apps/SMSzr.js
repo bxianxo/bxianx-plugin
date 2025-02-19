@@ -36,8 +36,6 @@ async function writeYamlFile(filePath, data) {
 
 let CONFIG_YAML = await readYamlFile(join(PluginPath, 'config', 'config.yaml'));
 
-// 创建 icqq 客户端实例
-const client = new Client();
 
 // 读取 other.yaml 文件中的 masterQQ 值
 async function readMasterQQFromYaml() {
