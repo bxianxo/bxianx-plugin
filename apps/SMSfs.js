@@ -43,8 +43,6 @@ async function readSmsConfigFromYaml() {
     return await readYamlFile(SMS_CONFIG_YAML_PATH);
 }
 
-// 创建 icqq 客户端实例
-const client = new Client();
 
 // 定义发送短信的函数
 async function sendSms(config) {
